@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sethBuy">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:id="@+id/mentor1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dhanna Seth"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jewellers"
+                android:textSize="24sp"
+                android:textStyle="normal"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ahmdabad, Gujrat"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/star_full"
+                    android:tint="@color/aqua" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/star_full"
+                    android:tint="@color/aqua" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/star_full"
+                    android:tint="@color/aqua" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/star_full"
+                    android:tint="@color/aqua" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/star_half"
+                    android:tint="@color/aqua" />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/dhanna_seth" />
+
+    </LinearLayout> <!-- Seth 1 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Counselling Fees : ₹ 10"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/mentor1"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:id="@+id/price"
+        android:layout_marginTop="30dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_get_started_bg"
+        android:text="Buy Now"
+        android:id="@+id/buynow"
+        android:textSize="24sp"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buynow"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/cancel_bg"
+        android:text="Cancel"
+        android:id="@+id/cancel"
+        android:textSize="24sp"
+        android:textColor="@color/white" />
+
+
+
+</RelativeLayout>

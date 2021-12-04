@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BizGuru</string>
+    <string name="new_user">New User? <u>Sign up</u></string>
+    <string name="gotologin">Already have an Account? <u>Login</u></string>
+    <string name="next">Next</string>
+    <string name="tell_me_about_yourself">Tell me about yourself</string>
+
+
+    <string-array name="fresherMentor">
+        <item>Fresher</item>
+        <item>Mentor</item>
+    </string-array>
+</resources>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".introduce">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/centerline"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tell_me_about_yourself"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:id="@+id/businesstype"
+        android:layout_above="@id/centerline">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business Type"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:id="@+id/textoftype"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textoftype"
+            android:id="@+id/showingcard"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                android:layout_weight="1"
+                android:id="@+id/onlinecard"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/online"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/onlineimage"/>
+
+                <TextView
+                    android:id="@+id/onlinebusinesstext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Online"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                android:layout_weight="1"
+                android:id="@+id/offlinecard"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/offline"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/offlineimage"/>
+
+                <TextView
+                    android:id="@+id/offlinebusinesstext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Offline"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout> <!-- Business type -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/centerline"
+        android:layout_marginTop="10dp"
+        android:id="@+id/businesscategory"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/userfullname"
+            android:hint="Business Category"
+            android:inputType="text">
+
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/businesscategory"
+        android:layout_marginTop="10dp"
+        android:id="@+id/platformname"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/platform"
+            android:hint="Online Platform/Offline Market Name"
+            android:inputType="text">
+
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:id="@+id/experiencecheck"
+        android:layout_below="@id/platformname">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experience Level"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:id="@+id/experiecnetext"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/experiecnetext"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borders"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:id="@+id/beginner">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beginner" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borders"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:id="@+id/intermediate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Intermediate" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borders"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:id="@+id/expert">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expert"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </RelativeLayout> <!--Experience Level-->
+
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:background="@drawable/button_get_started_bg"
+        android:layout_alignParentBottom="true"
+        android:textSize="26sp"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:id="@+id/next"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+</RelativeLayout>
